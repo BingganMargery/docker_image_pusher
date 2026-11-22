@@ -1,26 +1,26 @@
-nginx
+#nginx
 #支持私库
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
-xhofe/alist:latest
+#k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
+#xhofe/alist:latest
 
 # Docker 相关镜像（用于安装或运行 Docker）
-docker:28.4.0
-docker:dind
+#docker:28.4.0
+#docker:dind
 
 # K8s 核心组件镜像（以 v1.34.0 为例，需根据你的 Minikube 版本调整）
-registry.k8s.io/kube-apiserver:v1.34.0
-registry.k8s.io/kube-controller-manager:v1.34.0
-registry.k8s.io/kube-scheduler:v1.34.0
-registry.k8s.io/kube-proxy:v1.34.0
-registry.k8s.io/etcd:3.5.15-0
-registry.k8s.io/coredns/coredns:v1.11.1
-registry.k8s.io/pause:3.10
+#registry.k8s.io/kube-apiserver:v1.34.0
+#registry.k8s.io/kube-controller-manager:v1.34.0
+#registry.k8s.io/kube-scheduler:v1.34.0
+#registry.k8s.io/kube-proxy:v1.34.0
+#registry.k8s.io/etcd:3.5.15-0
+#registry.k8s.io/coredns/coredns:v1.11.1
+#registry.k8s.io/pause:3.10
 
 # Minikube 基础镜像（kicbase）
 gcr.io/k8s-minikube/kicbase:v0.0.48
 
 # 其他常用组件（如 metrics-server 等，按需添加）
-registry.k8s.io/metrics-server/metrics-server:v0.7.1
+#registry.k8s.io/metrics-server/metrics-server:v0.7.1
 #支持指定架构
 #--platform=linux/arm64 xiaoyaliu/alist
 --platform=linux xiaoyaliu/alist
