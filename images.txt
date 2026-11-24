@@ -19,7 +19,10 @@
 # Minikube 基础镜像（kicbase）
 #gcr.io/k8s-minikube/kicbase:v0.0.48
 
-docker.io/kindest/kindnetd:v20260820-69b56db7
+#docker.io/kindest/kindnetd:v20260820-69b56db7
+
+docker.io/kubernetesui/dashboard:v2.7.0
+docker.io/kubernetesui/metrics-scraper:v1.0.8
 
 # 其他常用组件（如 metrics-server 等，按需添加）
 #registry.k8s.io/metrics-server/metrics-server:v0.7.1
